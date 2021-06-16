@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Formats\**" />
+    <EmbeddedResource Remove="Formats\**" />
+    <None Remove="Formats\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sharpcompress" Version="0.28.3" />
+  </ItemGroup>
+
+</Project>

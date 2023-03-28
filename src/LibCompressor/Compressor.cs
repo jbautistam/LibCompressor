@@ -97,17 +97,6 @@ namespace Bau.Libraries.LibCompressor
 		}
 
 		/// <summary>
-		///		Añade un directorio al base
-		/// </summary>
-		private string GetPathToBase(string path, string fileName)
-		{
-			if (string.IsNullOrEmpty(path))
-				return Path.GetFileName(fileName);
-			else
-				return path + "/" + fileName;
-		}
-
-		/// <summary>
 		///		Descomprime un archivo en un directorio
 		/// </summary>
 		public void Uncompress(string fileSource, string pathTarget)

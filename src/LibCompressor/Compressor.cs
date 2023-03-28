@@ -23,10 +23,15 @@ namespace Bau.Libraries.LibCompressor
 		/// </summary>
 		public enum CompressType
 		{
+			/// <summary>Desconocido</summary>
 			Unknown,
+			/// <summary>Archivo ZIP</summary>
 			Zip,
+			/// <summary>Archivo RAR</summary>
 			Rar,
+			/// <summary>Archivo GZIP</summary>
 			GZip,
+			/// <summary>Archivo Tar</summary>
 			Tar
 		}
 
@@ -82,7 +87,7 @@ namespace Bau.Libraries.LibCompressor
 		{
 			List<string> files = new List<string>();
 
-				// Añade los archivos y directoros hijo
+				// Añade los archivos y directorios hijo
 				if (Directory.Exists(pathBase))
 				{
 					foreach (string path in Directory.GetDirectories(pathBase))

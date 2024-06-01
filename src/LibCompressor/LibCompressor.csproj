@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="sharpcompress" Version="0.36.0" />
+    <PackageReference Include="sharpcompress" Version="0.37.2" />
   </ItemGroup>
 
 </Project>
